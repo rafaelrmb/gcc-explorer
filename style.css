@@ -85,6 +85,10 @@ header .logo {
 }
 
 .nav-menu {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+
 	background-color: var(--header-bg);
 	border-top: 1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 0 0 1.25rem 1.25rem;
