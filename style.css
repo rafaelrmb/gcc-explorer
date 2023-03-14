@@ -186,7 +186,12 @@ header .logo {
 	display: flex;
 	flex-direction: column;
 	gap: 0.625rem;
-	padding: 4.375rem 1.25rem;
+	padding-block: 4.375rem;
+}
+
+.about h2,
+.about-card {
+	margin-inline: 1.25rem;
 }
 
 .about h2 {
@@ -207,17 +212,19 @@ header .logo {
 	margin-bottom: 2rem;
 }
 
-.footer-img {
+.about-img {
 	position: relative;
 
 	background: var(--bg-light);
 	border: 1px solid var(--border-orange);
 	min-height: 17.75rem;
 
+	margin-top: 4.6875rem;
 	margin-bottom: 5.9375rem;
 }
 
-.footer-img img {
+.about-img img {
 	position: absolute;
 	top: -2.4375rem;
+	width: 100%;
 }
