@@ -1,0 +1,177 @@
+/* VARIABLES */
+:root {
+	/* COLORS */
+	--header-bg: hsla(358, 75%, 58%, 1);
+	--bg-orange: hsla(358, 85%, 63%, 1);
+	--bg-light: hsla(356, 81%, 96%, 0.5);
+
+	--border-orange: hsla(358, 85%, 63%, 0.3);
+
+	--text-dark: hsla(209, 77%, 23%, 1);
+	--black: hsla(0, 0%, 0%, 1);
+	--white: hsla(0, 0%, 100%, 1);
+
+	/* FONTS */
+	--ff-primary: "Nunito", sans-serif;
+
+	/* FONT SIZES */
+	--fs-900: 2.75rem;
+	--fs-800: 1.875rem;
+	--fs-300: 1.125rem;
+	--fs-100: 0.875rem;
+}
+
+/* RESET CSS */
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body,
+input,
+button {
+	font-size: var(--fs-100);
+	font-family: var(--ff-primary);
+}
+
+body {
+	overflow-x: hidden;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-weight: 800;
+
+	transition: filter 0.3s ease-in-out;
+}
+
+button:hover {
+	filter: brightness(0.9);
+}
+
+.bold {
+	font-weight: 700;
+}
+
+/* Header */
+header {
+	background-color: var(--header-bg);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 1.25rem;
+}
+
+header .logo {
+	display: flex;
+	align-items: center;
+	gap: 0.4375rem;
+}
+
+header nav .hamburger-menu {
+	display: flex;
+	align-items: center;
+
+	background: var(--white);
+	border-radius: 0.625rem;
+	padding: 1rem 0.875rem;
+}
+
+/* Hero section */
+.hero {
+	background: var(--bg-orange);
+	color: var(--white);
+	padding: 3rem 1.25rem;
+}
+
+.hero h1 {
+	font-size: var(--fs-900);
+	margin-block: 2rem;
+	max-width: 18.75rem;
+}
+
+.friends-around p > span {
+	font-weight: 700;
+}
+
+.friends-pictures {
+	display: flex;
+	align-items: center;
+}
+
+.friends-pictures > img + img {
+	margin-left: -0.875rem;
+}
+
+.hero-gradient {
+	position: relative;
+	z-index: 0;
+
+	background: linear-gradient(153.09deg, #f36a6f 17.23%, #e44449 73.77%);
+	border-radius: 1.25rem;
+	padding-top: 11.25rem;
+	text-align: center;
+}
+
+.hero-gradient img {
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+}
+
+.hero-gradient button {
+	background: var(--white);
+	border-radius: 0.5rem;
+	color: var(--text-dark);
+	padding: 1.125rem 4.5rem;
+
+	position: relative;
+	z-index: 2;
+	margin-bottom: 1.25rem;
+}
+
+/* About section */
+.about {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+	padding: 4.375rem 1.25rem;
+}
+
+.about h2 {
+	font-size: var(--fs-800);
+	margin-bottom: 0.625rem;
+}
+
+.about-card {
+	background-color: var(--bg-light);
+	border: 1px solid var(--border-orange);
+	border-radius: 1.25rem;
+	padding: 1.875rem;
+}
+
+.about-card .card-icon {
+	display: inline-block;
+	font-size: var(--fs-800);
+	margin-bottom: 2rem;
+}
+
+.footer-img {
+	position: relative;
+
+	background: var(--bg-light);
+	border: 1px solid var(--border-orange);
+	min-height: 17.75rem;
+
+	margin-bottom: 5.9375rem;
+}
+
+.footer-img img {
+	position: absolute;
+	top: -2.4375rem;
+}
