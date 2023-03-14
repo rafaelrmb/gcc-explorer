@@ -14,6 +14,7 @@
 
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+		<script src="script.js" defer></script>
 
 		<title>Find A Friend - Home</title>
 	</head>
@@ -92,6 +93,13 @@
 				</svg>
 			</div>
 			<nav>
+				<ul class="nav-menu hidden">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">Sobre o app</a></li>
+					<li><a href="#">Animais disponíveis</a></li>
+					<li><a href="#">Sobre a FindAFriend</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
 				<button class="hamburger-menu">
 					<svg
 						width="16"
@@ -123,7 +131,7 @@
 						/>
 					</svg>
 				</button>
-				<div class="close-menu" hidden>
+				<button class="close-menu hidden">
 					<svg
 						width="16"
 						height="16"
@@ -146,7 +154,7 @@
 							stroke-linejoin="round"
 						/>
 					</svg>
-				</div>
+				</button>
 			</nav>
 		</header>
 
