@@ -355,4 +355,34 @@ header .nav-menu__close.active {
 		padding-inline: 11.375rem;
 		font-size: 1.25rem;
 	}
+
+	/* About app section adjusting to big screens */
+	.about-app {
+		display: grid;
+		grid-template-areas: "about-img  about-cards";
+		grid-template-columns: 1fr 1fr;
+		column-gap: 3.5rem;
+	}
+
+	.about-app__text {
+		margin-top: 8.375rem;
+		padding-left: 0;
+	}
+
+	.about-app__image {
+		background-image: url(./assets/app-big-screen.svg);
+		background-size: 41rem 40.375rem;
+		background-position: left;
+		grid-area: about-img;
+		margin-left: 1.5rem;
+		height: 49.0625rem;
+	}
+
+	.about-app__image::before {
+		border-radius: 1.25rem;
+		background: linear-gradient(180deg, var(--bg-light) 0%, hsla(356.5, 81%, 95.9%, 0) 100%);
+		top: -2.5rem;
+		height: 49.0625rem;
+		max-width: 41rem;
+	}
 }
