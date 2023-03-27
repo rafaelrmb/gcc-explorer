@@ -272,6 +272,11 @@ header .nav-menu__close.active {
 }
 
 @media (min-width: 1024px) {
+	.logo svg {
+		width: 11.0625rem;
+		height: 2.875rem;
+	}
+
 	/* Header menu adjusting to big screens */
 	header .nav-menu {
 		display: flex;
