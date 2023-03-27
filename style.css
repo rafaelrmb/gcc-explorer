@@ -149,6 +149,7 @@ header .nav-menu__close.active {
 	padding-top: 3.25rem;
 	padding-bottom: 3rem;
 	color: var(--white);
+	overflow-x: hidden;
 }
 
 .friends-around {
@@ -180,4 +181,54 @@ header .nav-menu__close.active {
 	border-radius: 0.5rem;
 	padding: 1.125rem 4.5625rem;
 	margin-top: -4.5rem;
+}
+
+/* About app styling */
+.about-app {
+	padding-block: 4.375rem;
+}
+
+.about-app h2 {
+	font-size: var(--fs-800);
+	margin-bottom: 1.25rem;
+}
+
+.cards-grid {
+	display: grid;
+	gap: 0.625rem;
+	margin-bottom: 2.25rem;
+}
+
+.about-app .card {
+	background-color: var(--bg-light);
+	border: 1px solid var(--border-orange);
+	border-radius: 1.25rem;
+	padding: 1.875rem;
+	text-align: left;
+}
+
+.about-app .card__icon {
+	display: inline-block;
+	margin-bottom: 1.8rem;
+	font-size: 1.75rem;
+}
+
+.about-app__image {
+	position: relative;
+
+	background: url("./assets/app-screen.svg") no-repeat center center;
+	min-height: 21.75rem;
+	width: 100%;
+}
+
+.about-app__image::before {
+	content: "";
+
+	position: absolute;
+	top: 2.5rem;
+	z-index: -1;
+
+	background-color: var(--bg-light);
+	height: 17.75rem;
+	width: 100%;
 }
