@@ -139,3 +139,45 @@ header .nav-menu__close.active {
 	display: flex;
 	align-items: center;
 }
+
+/* Hero styling */
+.hero {
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--bg-orange);
+	padding-top: 3.25rem;
+	padding-bottom: 3rem;
+	color: var(--white);
+}
+
+.friends-around {
+	display: flex;
+	flex-direction: column;
+}
+
+.friends-around__images img + img {
+	margin-left: -1rem;
+}
+
+.hero h1 {
+	margin-block: 2rem;
+	max-width: 17.5rem;
+	font-size: var(--fs-900);
+}
+
+.hero__image {
+	align-self: center;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.cta-button {
+	background: var(--white);
+	border-radius: 0.5rem;
+	padding: 1.125rem 4.5625rem;
+	margin-top: -4.5rem;
+}
