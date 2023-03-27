@@ -1,15 +1,15 @@
-const openNavMenuButton = document.querySelector(".hamburger-menu");
-const closeNavMenuButton = document.querySelector(".close-menu");
+const openNavMenuButton = document.querySelector(".nav-menu__open");
+const closeNavMenuButton = document.querySelector(".nav-menu__close");
 const navMenu = document.querySelector(".nav-menu");
 
 openNavMenuButton.addEventListener("click", () => {
-  openNavMenuButton.classList.toggle("hidden");
-  closeNavMenuButton.classList.toggle("hidden");
-  navMenu.classList.toggle("hidden");
+  navMenu.classList.add("active");
+  closeNavMenuButton.classList.add("active");
+  openNavMenuButton.classList.remove("active");
 });
 
 closeNavMenuButton.addEventListener("click", () => {
-  openNavMenuButton.classList.toggle("hidden");
-  closeNavMenuButton.classList.toggle("hidden");
-  navMenu.classList.toggle("hidden");
+  navMenu.classList.remove("active");
+  closeNavMenuButton.classList.remove("active");
+  openNavMenuButton.classList.add("active");
 })
