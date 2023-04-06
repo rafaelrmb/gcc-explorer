@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700;800&display=swap"
 			rel="stylesheet"
 		/>
 
-		<link rel="stylesheet" href="./style.css" />
-		<link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
-		<script src="script.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<link
+			rel="shortcut icon"
+			href="./assets/favicon.svg"
+			type="image/x-icon"
+		/>
 
+		<script
+			src="script.js"
+			defer
+		></script>
 		<title>Find A Friend - Home</title>
 	</head>
 	<body>
@@ -88,19 +115,39 @@
 			<nav>
 				<ul class="nav-menu bold">
 					<li class="nav-menu__item">
-						<a href="#" class="nav-menu__link active">Home</a>
+						<a
+							href="#"
+							class="nav-menu__link active"
+							>Home</a
+						>
 					</li>
 					<li class="nav-menu__item">
-						<a href="#" class="nav-menu__link">Sobre o app</a>
+						<a
+							href="#"
+							class="nav-menu__link"
+							>Sobre o app</a
+						>
 					</li>
 					<li class="nav-menu__item">
-						<a href="#" class="nav-menu__link">Animais disponíveis</a>
+						<a
+							href="#"
+							class="nav-menu__link"
+							>Animais disponíveis</a
+						>
 					</li>
 					<li class="nav-menu__item">
-						<a href="#" class="nav-menu__link">Sobre a FindAFriend</a>
+						<a
+							href="#"
+							class="nav-menu__link"
+							>Sobre a FindAFriend</a
+						>
 					</li>
 					<li class="nav-menu__item">
-						<a href="#" class="nav-menu__link">contato</a>
+						<a
+							href="#"
+							class="nav-menu__link"
+							>contato</a
+						>
 					</li>
 				</ul>
 				<button class="nav-menu__open active">
@@ -160,7 +207,11 @@
 						</g>
 						<defs>
 							<clipPath id="clip0_1_165">
-								<rect width="16" height="16" fill="white" />
+								<rect
+									width="16"
+									height="16"
+									fill="white"
+								/>
 							</clipPath>
 						</defs>
 					</svg>
@@ -173,10 +224,22 @@
 				<div class="hero__text container">
 					<div class="friends-around">
 						<div class="friends-around__images">
-							<img src="assets/sm-img-pug.png" alt="um cachorro da raça pug preto" />
-							<img src="assets/sm-img-cat1.png" alt="um gato preto e branco" />
-							<img src="assets/sm-img-dog.png" alt="um cachorro marrom com branco" />
-							<img src="assets/sm-img-cat2.png" alt="um gato marrom com branco" />
+							<img
+								src="assets/sm-img-pug.png"
+								alt="um cachorro da raça pug preto"
+							/>
+							<img
+								src="assets/sm-img-cat1.png"
+								alt="um gato preto e branco"
+							/>
+							<img
+								src="assets/sm-img-dog.png"
+								alt="um cachorro marrom com branco"
+							/>
+							<img
+								src="assets/sm-img-cat2.png"
+								alt="um gato marrom com branco"
+							/>
 						</div>
 						<p class="firends-around__text"><span class="bold">324 amigos</span> na sua cidade</p>
 					</div>
@@ -184,7 +247,9 @@
 					<p class="mobile-hidden">Encontre o animal de estimação ideal para seu estilo de vida!</p>
 				</div>
 				<div class="hero__image">
-					<button class="cta-button">Acesse agora</button>
+					<button class="cta-button">
+						<a href="#">Acesse agora</a>
+					</button>
 				</div>
 			</section>
 
@@ -223,6 +288,52 @@
 
 				<div class="about-app__image"></div>
 			</section>
+
+			<section class="gallery">
+				<h2 class="gallery-title">Há muitos amigos esperando por você!</h2>
+
+				<p class="gallery-text">
+					O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais
+					que precisam de um lar amoroso. É fácil de usar e você pode navegar por uma variedade de
+					animais para encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.
+				</p>
+
+				<button class="cta-button">
+					<a href="#">Acesse agora</a>
+				</button>
+
+				<div class="gallery__images">
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img
+									src="assets/swiper1.png"
+									alt="um gato laranja dormindo"
+								/>
+								<p>Hamilton</p>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="assets/swiper2.png"
+									alt="um cachorro filhote"
+								/>
+								<p>Cleiton</p>
+							</div>
+							<div class="swiper-slide">
+								<img
+									src="assets/swiper3.png"
+									alt="um gato marrom"
+								/>
+								<p>Aldo</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 	</body>
 </html>

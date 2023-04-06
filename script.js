@@ -13,3 +13,16 @@ closeNavMenuButton.addEventListener("click", () => {
   closeNavMenuButton.classList.remove("active");
   openNavMenuButton.classList.add("active");
 })
+
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 50,
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

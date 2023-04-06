@@ -1,4 +1,4 @@
-/* VARIABLES */
+/* ----------------------- VARIABLES ----------------------- */
 :root {
 	/* COLORS */
 	--header-bg: hsla(358, 75%, 58%, 1);
@@ -8,20 +8,22 @@
 	--border-orange: hsla(358, 85%, 63%, 0.3);
 
 	--text-dark: hsla(209, 77%, 23%, 1);
+	--text-yellow: hsla(47, 87%, 66%, 1);
 	--black: hsla(0, 0%, 0%, 1);
 	--white: hsla(0, 0%, 100%, 1);
 
 	/* FONTS */
-	--ff-primary: "Nunito", sans-serif;
+	--ff-primary: 'Nunito', sans-serif;
 
 	/* FONT SIZES */
 	--fs-900: 2.75rem;
 	--fs-800: 1.875rem;
 	--fs-300: 1.125rem;
+	--fs-200: 1rem;
 	--fs-100: 0.875rem;
 }
 
-/* RESET CSS */
+/* ----------------------- RESET CSS ----------------------- */
 * {
 	margin: 0;
 	padding: 0;
@@ -70,7 +72,7 @@ ul {
 	padding-inline: 1.25rem;
 }
 
-/* Header Styling */
+/* ----------------------- Header Styling ----------------------- */
 header {
 	display: flex;
 	align-items: center;
@@ -102,7 +104,7 @@ header .nav-menu {
 }
 
 header .nav-menu::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 
@@ -140,7 +142,7 @@ header .nav-menu__close.active {
 	align-items: center;
 }
 
-/* Hero styling */
+/* ----------------------- Hero styling ----------------------- */
 .hero {
 	display: flex;
 	flex-direction: column;
@@ -190,7 +192,7 @@ header .nav-menu__close.active {
 	padding: 1.125rem 4.5625rem;
 }
 
-/* About app styling */
+/* ----------------------- About app styling ----------------------- */
 .about-app {
 	padding-block: 4.375rem;
 }
@@ -223,13 +225,13 @@ header .nav-menu__close.active {
 .about-app__image {
 	position: relative;
 
-	background: url("./assets/app-screen.svg") no-repeat center center;
+	background: url('./assets/app-screen.svg') no-repeat center center;
 	min-height: 21.75rem;
 	width: 100%;
 }
 
 .about-app__image::before {
-	content: "";
+	content: '';
 
 	position: absolute;
 	top: 2.5rem;
@@ -240,7 +242,74 @@ header .nav-menu__close.active {
 	width: 100%;
 }
 
-/* Media queries */
+/* ----------------------- Gallery Section ----------------------- */
+
+.gallery {
+	background-color: var(--bg-orange);
+	border-radius: 1.25rem;
+	margin-inline: 1.25rem;
+	margin-block: 1.25rem;
+	padding: 3.75rem 2rem;
+	text-align: center;
+}
+
+.gallery-title {
+	color: var(--text-yellow);
+	font-size: var(--fs-800);
+}
+
+.gallery-text {
+	color: var(--white);
+	font-size: var(--fs-200);
+	letter-spacing: -0.02em;
+	margin-top: 2.5rem;
+	margin-inline: auto;
+	text-align: left;
+}
+
+.gallery .cta-button {
+	margin: 1.25rem auto 1.875rem;
+}
+
+.gallery__images {
+	position: relative;
+}
+
+.gallery__images .swiper-pagination {
+	bottom: -2rem !important;
+}
+
+.gallery__images .swiper-button-next,
+.gallery__images .swiper-button-prev {
+	display: none;
+}
+
+.gallery .swiper {
+	max-width: 24rem;
+	font-weight: bold;
+}
+
+.gallery .swiper-slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.875rem;
+
+	background-color: var(--white);
+	border-radius: 1.125rem;
+	padding-bottom: 1.5625rem;
+}
+
+.gallery__images .swiper-pagination-bullet {
+	background-color: var(--white);
+}
+
+.gallery .swiper img {
+	cursor: grab;
+	width: 100%;
+}
+
+/* ----------------------- Media queries ----------------------- */
 @media (min-width: 768px) {
 	.container {
 		padding-inline: 7.0625rem;
@@ -248,8 +317,8 @@ header .nav-menu__close.active {
 
 	.cards-grid {
 		grid-template-areas:
-			"card-1 card-2"
-			"card-3 card-3";
+			'card-1 card-2'
+			'card-3 card-3';
 
 		gap: 2rem;
 	}
@@ -269,6 +338,36 @@ header .nav-menu__close.active {
 	.cards-grid .card:nth-of-type(3) p {
 		max-width: 80%;
 	}
+
+	.gallery__images .swiper-button-next,
+	.gallery__images .swiper-button-prev {
+		display: flex;
+		align-items: center;
+
+		border: 1px solid var(--white);
+		border-radius: 0.9375rem;
+		color: var(--white);
+		padding: 1.5rem;
+	}
+
+	.gallery__images .swiper-button-next::after,
+	.gallery__images .swiper-button-prev::after {
+		font-size: 1rem;
+	}
+
+	.gallery__images .swiper-button-next[tabindex='0'],
+	.gallery__images .swiper-button-prev[tabindex='0'] {
+		color: var(--text-dark);
+		background-color: var(--white);
+		font-weight: bold;
+	}
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+	.swiper-button-next,
+	.swiper-button-prev {
+		top: 110% !important;
+	}
 }
 
 @media (min-width: 1024px) {
@@ -277,7 +376,7 @@ header .nav-menu__close.active {
 		height: 2.875rem;
 	}
 
-	/* Header menu adjusting to big screens */
+	/* ------------------ Header menu adjusting to big screens ------------ */
 	header .nav-menu {
 		display: flex;
 		align-items: center;
@@ -304,7 +403,7 @@ header .nav-menu__close.active {
 		display: none;
 	}
 
-	/* Hero section adjusting to big screens */
+	/* ----------- Hero section adjusting to big screens -------------- */
 	:root {
 		--fs-900: 4.5rem;
 	}
@@ -312,7 +411,7 @@ header .nav-menu__close.active {
 	.hero {
 		display: grid;
 		grid-template-columns: 1fr minmax(44rem, 1fr);
-		grid-template-areas: "grid-text grid-img";
+		grid-template-areas: 'grid-text grid-img';
 		column-gap: 1rem;
 
 		padding-bottom: 0;
@@ -361,10 +460,10 @@ header .nav-menu__close.active {
 		font-size: 1.25rem;
 	}
 
-	/* About app section adjusting to big screens */
+	/* ----------- About app section adjusting to big screens ----------------- */
 	.about-app {
 		display: grid;
-		grid-template-areas: "about-img  about-cards";
+		grid-template-areas: 'about-img  about-cards';
 		grid-template-columns: 1fr 1fr;
 		column-gap: 3.5rem;
 	}
@@ -389,5 +488,44 @@ header .nav-menu__close.active {
 		top: -2.5rem;
 		height: 49.0625rem;
 		max-width: 41rem;
+	}
+
+	/* ------------------ Gallery section adjusting to big screens  ------------ */
+	.gallery {
+		display: grid;
+		grid-template-areas:
+			'gallery-title gallery-text'
+			'cta-button gallery-images';
+
+		grid-template-columns: 1fr 1fr;
+
+		padding: 6.25rem 6.5rem;
+	}
+
+	.gallery-title {
+		grid-area: gallery-title;
+		text-align: left;
+
+		max-width: 26rem;
+		font-size: 3rem;
+	}
+
+	.gallery-text {
+		grid-area: gallery-text;
+		max-width: 30.625rem;
+		margin-top: 0;
+		font-size: 1.25rem;
+	}
+
+	.gallery__images {
+		grid-area: gallery-images;
+	}
+
+	.gallery .cta-button {
+		grid-area: cta-button;
+		border-radius: 1.25rem;
+		max-height: 4.5rem;
+		margin-block: auto;
+		margin-left: 0;
 	}
 }
